@@ -1,28 +1,16 @@
 ---
-import About from '@/components/About.astro'
-import Certificates from '@/components/Certificates.astro'
-import Education from '@/components/Education.astro'
-import Header from '@/components/Header.astro'
-import Projects from '@/components/Projects.astro'
+import Hero from '@/components/Hero.astro'
+import Navegation from '@/components/Navegation.astro'
+import News from '@/components/News.astro'
+import Products from '@/components/Products.astro'
+import Trust from '@/components/Trust.astro'
 import Layout from '@/layouts/Layout.astro'
 ---
 
-<Layout
-  title="Portafolio - Olivarez Alexis"
-  href="/favicon.svg"
-  type="image/svg">
-  <main>
-    <Header />
-    <About />
-    <Projects />
-    <Education />
-    <Certificates />
-  </main>
+<Layout title="Telco - Empresa de Telecomunicaciones">
+  <Navegation />
+  <Hero />
+  <Products />
+  <Trust />
+  <News />
 </Layout>
-
-<style>
-  body {
-    background-color: #fff;
-    color: #202127;
-  }
-</style>

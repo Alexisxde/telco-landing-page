@@ -3,11 +3,9 @@ import ViewTransitions from 'astro/components/ViewTransitions.astro'
 
 interface Props {
   title: string
-  href: string
-  type: string
 }
 
-const { title, type, href } = Astro.props
+const { title } = Astro.props
 ---
 
 <!doctype html>
@@ -16,7 +14,6 @@ const { title, type, href } = Astro.props
     <meta charset="UTF-8" />
     <meta name="description" content="Portafolio donde verás mis proyectos." />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type={type} href={href} />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <meta property="og:title" content="Portafolio - Olivarez Alexis" />
